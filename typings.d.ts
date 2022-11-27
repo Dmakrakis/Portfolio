@@ -21,6 +21,19 @@ interface PageInfo extends SanityBody {
   phoneNumber: string;
   profilePic: Image;
 }
+
+export interface Technology extends SanityBody {
+  _type: "skill";
+  image: Image;
+  title: string;
+}
+
+export interface Skill extends SanityBody {
+  _type: "skill";
+  image: Image;
+  title: string;
+}
+
 export interface Social extends SanityBody {
   _type: "social";
   title: string;
