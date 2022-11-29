@@ -1,12 +1,20 @@
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import Experience from "../components/Experience";
+import WorkExperience from "../components/WorkExperience";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import styles from "../styles/Home.module.css";
+import { Experience, PageInfo, Skill } from "../typings";
+
+type Props = {
+  pageInfo: PageInfo;
+  experiences: Experience[];
+  skills: Skill[];
+};
 
 export default function Home() {
   return (
@@ -24,7 +32,7 @@ export default function Home() {
         <About></About>
       </section>
       <section id="experience" className="">
-        <Experience></Experience>
+        <WorkExperience></WorkExperience>
       </section>
       <section id="skills" className="">
         <Skills></Skills>
@@ -38,3 +46,5 @@ export default function Home() {
     </div>
   );
 }
+
+export const GetStaticProps: GetStaticProps<Props> = async () => {};
