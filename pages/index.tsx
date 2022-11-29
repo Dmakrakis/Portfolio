@@ -36,7 +36,7 @@ export default function Home({
         <title>Dimitris Makrakis Portfolio</title>
       </Head>
 
-      <Header />
+      <Header socials={socials} />
 
       <section id="hero" className="">
         <Hero></Hero>
