@@ -51,7 +51,7 @@ export default function Home({
         <Skills></Skills>
       </section>
       <section id="projects" className="">
-        <Projects></Projects>
+        <Projects projects={projects}></Projects>
       </section>
       <section id="contact" className="">
         <Contact></Contact>
