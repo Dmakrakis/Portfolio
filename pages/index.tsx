@@ -42,7 +42,7 @@ export default function Home({
         <Hero pageInfo={pageInfo}></Hero>
       </section>
       <section id="about" className="">
-        <About></About>
+        <About pageInfo={pageInfo}></About>
       </section>
       <section id="experience" className="">
         <WorkExperience></WorkExperience>

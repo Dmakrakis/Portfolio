@@ -29,7 +29,7 @@ export default function Hero({ pageInfo }: Props) {
       />
       <div className="z-30">
         <h2 className="text-sm uppercase text-gray-400 pb-2 tracking-[15px]">
-          Frontend Developer
+          {pageInfo?.role}
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
           {text}
