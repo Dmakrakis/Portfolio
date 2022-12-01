@@ -39,7 +39,7 @@ export default function Home({
       <Header socials={socials} />
 
       <section id="hero" className="">
-        <Hero></Hero>
+        <Hero pageInfo={pageInfo}></Hero>
       </section>
       <section id="about" className="">
         <About></About>

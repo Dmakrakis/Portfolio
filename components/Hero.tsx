@@ -5,13 +5,14 @@ import profPic from "../public/prof.jpg";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BgCircles from "./BgCircles";
 import Link from "next/link";
+import { PageInfo } from "../typings";
 
-type Props = {};
+type Props = { pageInfo: PageInfo };
 
-export default function Hero({}: Props) {
+export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, I am Dimitris Makrakis",
+      `Hi, I am ${pageInfo?.name}`,
       "a Frontend Developer",
       "<WhoLovesCoffeeAndCoding/>",
     ],
