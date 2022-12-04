@@ -45,7 +45,7 @@ export default function Home({
         <About pageInfo={pageInfo}></About>
       </section>
       <section id="experience" className="">
-        <WorkExperience></WorkExperience>
+        <WorkExperience experiences={experiences}></WorkExperience>
       </section>
       <section id="skills" className="">
         <Skills></Skills>

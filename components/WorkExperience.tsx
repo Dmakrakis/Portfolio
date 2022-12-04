@@ -1,10 +1,11 @@
 import React from "react";
 import ExpCard from "./ExpCard";
 import { motion } from "framer-motion";
+import { Experience } from "../typings";
 
-type Props = {};
+type Props = { experiences: Experience[] };
 
-export default function WorkExperience({}: Props) {
+export default function WorkExperience({ experiences }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
